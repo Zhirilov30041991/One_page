@@ -130,16 +130,33 @@ h2{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 }
-.progress-bar {
+.progress-bar, .progress-bars, .progress-barss {
   width: 100%;
   background-color: #d8d8d8;
 }
-
-.progress-bar-fill {
-  display: block;
-  height: 2px;
-  background-color: #10c9c3;
-  transition: width 500ms ease-in-out;
+.progress-bar:after{
+	display: block;
+	content: '';
+	width: 75%;
+  	height: 2px;
+  	background-color: #10c9c3;
+  	transition: width 500ms ease-in-out;
+}
+.progress-bars:after{
+	display: block;
+	content: '';
+	width: 90%;
+  	height: 2px;
+  	background-color: #10c9c3;
+  	transition: width 500ms ease-in-out;
+}
+.progress-barss:after{
+	display: block;
+	content: '';
+	width: 65%;
+  	height: 2px;
+  	background-color: #10c9c3;
+  	transition: width 500ms ease-in-out;
 }
 .progress:nth-child(1){
 	padding-bottom: 2.5rem;
@@ -363,4 +380,26 @@ h2{
 	content: '\f075';
 	font-family: FontAwesome;
 	font-size: 3rem;
+}
+.testimonials_main{
+	max-width: 815px;
+	text-align: center;
+	margin: auto;
+}
+.testimonials{
+	background-color: #10c9c3;
+	padding: 11.4375rem 0rem;
+}
+.testimonials_main p{
+	font-size: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	padding-bottom: 2.5rem;
+	color: #fff;
+}
+.testimonials_main span{
+	font-size: 0.75rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #fff;
 }
