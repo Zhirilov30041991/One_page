@@ -12,6 +12,9 @@
     .footer_contacts{   
         margin-right: 0px;
     }
+    .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable{
+    width: 100% !important;
+}
  }
 @media only screen and (max-width: 992px) {
     .header_main{
@@ -55,7 +58,16 @@
     .footer_contacts, .footer_date{
         margin-right: 0;
     }
- }
+   .nav__bar{
+    display: block;
+}
+    .logo{
+        margin: auto;
+    }
+    ul{
+        display: none;
+    } 
+}
 
  @media only screen and (max-width: 576px){
     .header_text h1{
@@ -69,6 +81,9 @@
     }
     .professional_skills h2{
         font-size: 18px;
+    }
+    #dialog button, #dialog a{
+        min-width: 280px;  
     }
  }
   @media only screen and (max-width: 360px){

@@ -14,7 +14,14 @@
 	<link rel="stylesheet" type="text/css" href="css/media-queries.css">
 </head>
 <body>
-	<header class="header">
+<div class="nav__bar">
+    <a href="#" class="nav__trigger">
+        <div class="bars"></div>
+    </a>        
+</div>
+
+<main class="main">
+ 	<header class="header scrollflow -opacity -slide-top">
 		<div class="container">
 			<div class="header_nav">
 				<div class="logo">
@@ -46,20 +53,48 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="header_main">
+			<div class="header_main scrollflow -opacity -slide-top">
 				<div class="header_text">
 					<h1>We Design and Develop</h1>
 					<p>We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
 					<a class="button" href="#">Contact us</a>
-					<div id="dialog" title="Basic dialog">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum animi, suscipit nisi voluptatem doloremque porro odio fugit. Fugit cumque sapiente accusamus quam maiores ducimus molestias est magni eius dicta officiis laudantium minima inventore consequuntur beatae atque nobis deleniti velit, eveniet, debitis! Qui, distinctio quia. Facere dolor magnam optio nostrum tenetur ut dicta exercitationem libero neque dolores eaque tempore, iure, officia animi omnis sit a, minus reiciendis? Soluta delectus repudiandae ducimus repellendus commodi maxime ipsum cum. Aliquam optio, tempore et. Illum at blanditiis, iste cumque cupiditate natus explicabo fugit assumenda voluptas unde necessitatibus! Quam corporis velit, ipsam enim aliquid repudiandae quisquam.</p>
+					<div id="dialog" title="FORGOT YOUR PASSWORD?">
+						<form action="#" method="POST">
+							<label>ENTER YOUR EMAIL</label>
+							<input type="email" name="text">
+							<button type="reset">RESET PASSWORD</button>
+							<span>OR</span>
+							<a href="#">Log In Using Facebook</a>
+						</form>
 					</div>
 				</div>
 
 			</div>
 		</div>
 	</header>
-	<section class="about">
+    
+    
+</main>
+
+<nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__item"><a href="#">HOME</a></li>
+        <li class="nav__item"><a href="#">ABOUT</a></li>
+        <li class="nav__item"><a href="#">WORK</a></li>
+        <li class="nav__item"><a href="#">PROCESS</a></li>
+        <li class="nav__item"><a href="#">SERVISES</a></li>
+        <li class="nav__item"><a href="#">TESTIMONIALS</a></li>
+        <li class="nav__item"><a href="#">CONTACT</a></li>
+    </ul>
+</nav>
+
+
+
+
+
+
+
+	<section class="about scrollflow -opacity -slide-top">
 		<div class="container">
 			<h2>About Us</h2>
 			<p>Divide have don't man wherein air fourth. Own itself make 	have ave night won't make. 
@@ -70,7 +105,7 @@
 				</div>
 		</div>
 	</section>
-	<section class="skills">
+	<section class="skills scrollflow -opacity -slide-top">
 		<div class="container">
 			<div class="professional_skills">
 				<h2>Professional Skills</h2>
@@ -94,7 +129,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="numbers">
+	<section class="numbers scrollflow -opacity -slide-top">
 		<div class="container">
 			<div class="numbers_main">
 				<div class="numbers_icon">
@@ -124,7 +159,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="work">
+	<section class="work scrollflow -opacity -slide-top">
 		<div class="work_one">
 			<div class="square"></div>
 			<div class="square"></div>
@@ -141,16 +176,16 @@
 			<p>load more work</p>
 		</div>
 	</section>
-	<section class="work_process">
+	<section class="work_process scrollflow -opacity -slide-top">
 		<div class="container">
 			<h2>Our Work Process</h2>
 			<p>Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years.</p>
 			<div class="video_screen">
-				<iframe width="100%"  src="https://www.youtube.com/embed/InSenLOKtSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/InSenLOKtSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services scrollflow -opacity -slide-top">
 		<div class="container">
 			<div class="service_one">
 				<div class="services_skill">
@@ -190,7 +225,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="testimonials">
+	<section class="testimonials scrollflow -opacity -slide-top">
 		<div class="container">
 			<div class="owl-carousel owl-theme">
 				<div class="testimonials_main">
@@ -208,7 +243,7 @@
 			</div>	
 		</div>
 	</section>
-	<section class="clients">
+	<section class="clients scrollflow -opacity -slide-top">
 		<div class="container">
 			<div class="clients_images">
 				<img src="images/clients_1.png" alt="clients_1">
@@ -219,7 +254,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="project">
+	<section class="project scrollflow -opacity -slide-top">
 		<div class="container">
 			<div class="project_main">
 					<h2>Need a Project?</h2>
@@ -276,6 +311,7 @@
   crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="js/scrollflow.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
